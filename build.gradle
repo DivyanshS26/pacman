@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id "org.sonarqube" version "6.2.0.5505"
+}
+
+group = 'com.reu.project '
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+sonar {
+    properties {
+        property "sonar.projectKey", "DivyanshS26_pacman"
+        property "sonar.organization", "divyanshs26"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
+}
+dependencies {
+
+    testImplementation 'junit:junit:4.13.2'
+}
